@@ -1,0 +1,80 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+/*(2) 表示できる面積に合わせて、画像も伸縮させる*/
+img{
+	max-width: 100%
+	height: auto;
+}
+
+@media (max-width: 767px){
+
+}
+
+	.wrapper{
+		margin: 0 8px;
+	}
+
+
+
+/* スマートフォン向けのCSS */
+
+@media (max-width: 767px){
+
+	.wrapper{
+		margin: 0 8px;
+	}
+	/*① ロゴのサイズを少し小さくする*/
+	.logo{
+		margin: 30px 0;
+	}
+	.logo img{
+		width: 200px;
+	}
+	/*①ここまで*/
+	/*② ナビゲーションのリストを縦に並べる*/
+	.nav{
+		background-color: #dfddda;
+	}
+	.nav li{
+		display: block;
+	}
+	/*② ここまで*/
+
+	/*③ 2コラムレイアウトを解除*/
+	/*	menu.html - 横並び解除 -	*/
+	.menu-item{
+		display: block;
+	}
+	.menu-photo{
+		margin-right: 0;
+		width: 100%;
+	}
+	.menu-text{
+		width: 100%;
+	}
+	/*③ここまで*/
+
+	/*④ about.htmlのあいさつ文の画像の右パディングを解除 */
+	/* about.html - 画像のパディングを調整 */
+	.shop-photo{
+		padding-right: 0;
+	}
+	/*④ ここまで*/
+
+	/*⑤ フォームの幅をフィットさせる*/
+	/* contact.html - フォーム */
+	select{
+		width: 100%;
+	}
+	input[name="subject"]{
+		width: 100%;
+	}
+	textarea{
+		width: 100%;
+	}
+	input[type="submit"]{
+		margin: 20px 0;
+		width: 100%;
+	}
+	/*⑤ここまで*/
+}
