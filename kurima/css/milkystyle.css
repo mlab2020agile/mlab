@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+html{
+	font-family: "HG行書体";
+}
+html *{
+	box-sizing: border-box;
+}
+body{
+	margin: 0 0 0 0;
+	background-color: #ff0000;
+}
+.wrapper{
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+h2{
+	color: #ffa500;
+	font-size: 22px;
+	border-bottom: 3px dotted #ffa500;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+p{
+	line-height: 1.6;
+}
+a:link{
+	color: #0000ff;
+}
+a:visited{
+	color: #0000ff;
+}
+a:hover{
+	color: #0000ff;
+}
+a:active{
+	color: #0000ff;
+}
+
+.center-images{
+	text-align: center;
+}
+
+
+
+/* 全てのページに適用 - ヘッダー -*/
+.logo{
+	margin: 50px 0 40px 0;
+	line-height: 0;
+	text-align: center;
+	text-decoration: none;
+
+}
+.logo a:link{
+	color: #5b7086;
+	text-decoration: none;
+}
+.logo a:visited{
+	color: #5b7086;
+	text-decoration: none;
+}
+.logo a:hover{
+	color: #5b7086;
+	text-decoration: none;
+}
+.logo a:active{
+	color: #5b7086;
+	text-decoration: none;
+}
+
+/*constellation.html*/
+.center{
+	text-align: center;
+}
+
+.take{
+    margin: 0 0 0 0;
+
+    background-color: #f9fff5;
+}
+
+.backtake{
+    background-image: url("images/take.png");
+    background-repeat: repeat;
+}
+
+
+/* スマートフォン向けのCSS */
+@media (max-width: 767px){
+	.wrapper{
+		margin: 0 8px;
+	}
+	/*① ロゴのサイズを少し小さくする*/
+	.logo{
+		margin: 30px 0;
+	}
+	.logo img{
+		width: 200px;
+	}
+	/*①ここまで*/
+	/*② ナビゲーションのリストを縦に並べる*/
+	.nav{
+		background-color: #dfddda;
+	}
+	.nav li{
+		display: block;
+	}
+	/*② ここまで*/
+
+	/*③ 2コラムレイアウトを解除*/
+	/*	menu.html - 横並び解除 -	*/
+	.menu-item{
+		display: block;
+	}
+	.menu-photo{
+		margin-right: 0;
+		width: 100%;
+	}
+	.menu-text{
+		width: 100%;
+	}
+	/*③ここまで*/
+
+	/*④ about.htmlのあいさつ文の画像の右パディングを解除 */
+	/* about.html - 画像のパディングを調整 */
+	.shop-photo{
+		padding-right: 0;
+	}
+	/*④ ここまで*/
+
+	/*⑤ フォームの幅をフィットさせる*/
+	/* contact.html - フォーム */
+	select{
+		width: 100%;
+	}
+	input[name="subject"]{
+		width: 100%;
+	}
+	textarea{
+		width: 100%;
+	}
+	input[type="submit"]{
+		margin: 20px 0;
+		width: 100%;
+	}
+	/*⑤ここまで*/
+}

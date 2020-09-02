@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+html{
+	font-family: serif;
+}
+
+html *{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0 0 0 0;
+	background-color: #ffffff;
+	background-image: url(../images/bgimage.png);
+	background-repeat: repeat;
+}
+.wrapper{
+	margin: 0 auto 0 auto;
+	max-width: 960px;
+}
+h2{
+	color: #000000;
+	font-size: 30px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+    padding-left: 5px;
+    background-image: url(../images/head.png);
+    background-repeat: repeat-x;
+}
+p{
+    line-height: 1.8;
+    font-size: 20px;
+}
+a:link{
+	color: #d25833;
+}
+a:visited{
+	color: #d25833;
+}
+a:hover{
+	color: #e3937a;
+}
+a:active{
+	color: #ff6a3b;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.logo{
+	margin: 50px 0 10px 0;
+	line-height: 0;
+    text-align: center;
+}
+.nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+.nav ul{
+	margin: 0 0 0 0;
+	padding: 60px 10px 0px 20px;
+	background-image: url(../images/menu-bg4.png);
+    background-repeat: repeat-x;
+    text-align: center;
+}
+.nav a:link{
+	color: #5b08f5;
+	text-decoration: none;
+}
+.nav a:visited{
+	color: #5b08f5;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #12e7d5;
+	text-decoration: none;
+}
+.nav a:active{
+	color: #000000;
+	text-decoration: none;
+}
+.footer{
+	background-image: url(../images/footer-bg.png);
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	padding: 80px 15px 20px 15px;
+	font-size: 12px;
+	color: #3f5170;
+}
+.keyvisual{
+    display: flex;
+    margin: 15px 0 0 0;
+    padding: 20px 0 10px 50px;
+}
+.keyvisual img{
+    border: 1px solid;
+    padding: 6px;
+	line-height: 0;
+
+}
+
+.keyvisual-text{
+    align-self: center;
+    vertical-align: middle;
+    padding: 0 auto 0 auto;
+    margin: 0 auto 0 auto;
+}
+
+.news-item{
+	margin: 0;
+}
+
+.hiroshi{
+    font-size: 25px;
+}
+
+.yushi{
+    font-size: 25px;
+    color: #ff0000;
+}
+
+.favorite{
+    margin: 0 0 0 0;
+    padding: 10px 10px 0px 40px;
+    font-size: 20px;
+}
+
+.favorite li{
+    margin-bottom: -15px;
+}
+
+.granblue-fantasy{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: #ff0000;
+}
+
+.granblue-character{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: #ff0000;
+}
+
+.history{
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+.history th, .info td{
+	padding: 8px;
+	border: 1px solid #bec2c7;
+	text-align: center;
+}
+.history th{
+	background-color: #dde2ea;
+	width: 500px;
+	color: #3f5170;
+	vertical-align: top;
+}
+
+
+
+
+@media (max-width: 767px){
+
+	.wrapper{
+		margin: 0 8px;
+		margin: 0 auto 0 auto;
+	}
+	/*① ロゴのサイズを少し小さくする*/
+	.logo{
+		margin: 30px 0;
+	}
+	.logo img{
+		width: 200px;
+    }
+    
+    .keyvisual{
+        width: 400px;
+	}
+	
+	.keyvisual-text{
+		width: 600px;
+		font-size: 15px;
+		padding: 0 auto 0 auto;
+		margin: 0 auto 0 auto;
+	}
+
+    .keyvisual-text{
+        padding-left: 10px;
+	}
+	
+}

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+html{
+	font-family: serif;
+}
+html *{
+	box-sizing: border-box;
+}
+body{
+	margin: 0 0 0 0;
+	background-color: #eeece9;
+}
+h2{
+	color: #0000ff;
+	font-size: 22px;
+	border-bottom: 3px dotted #0000ff;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+p{
+	line-height: 1.6;
+}
+
+#name{
+	text-align: right;
+	padding: 0 10% 0 0;
+}
+
+div{
+	padding: 0 8px 8px 8px;
+}
+
+a:link{
+	color: #d25833;
+}
+a:visited{
+	color: #d25833;
+}
+a:hover{
+	color: #e3937a;
+}
+a:active{
+	color: #ff6a3b;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+nav{
+	padding: 0 0 0 10%;
+}
+
+.nav li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 30px;
+}
+.nav ul{
+	margin: 0 0 0 0;
+	padding: 20px 10px 15px 20px;
+}
+.nav a:link{
+	color: #3c454d;
+	text-decoration: none;
+}
+.nav a:visited{
+	color: #3c454d;
+	text-decoration: none;
+}
+.nav a:hover{
+	color: #7b8dac;
+	text-decoration: none;
+}
+.nav a:active{
+	color: #5a9bc0;
+	text-decoration: none;
+}
+.footer{
+	margin-top: 30px;
+	padding: 80px 15px 20px 15px;
+	font-size: 16px;
+	color: #3f5170;
+}
+/* テーブル */
+
+table{
+	border-collapse: collapse;
+	width: 80%;
+}
+.info th, .info td{
+	padding: 8px;
+	border: 1px solid #bec2c7;
+	text-align: left;
+}
+.info th{
+	vertical-align: top;
+	text-align: center;
+}
+
+.fav{
+	border: 1px solid #bec2c7;
+	vertical-align: top;
+}
+
+.fav td{
+	padding: 0 8px 8px 8px;
+}
+
+.item{
+	display: flex;
+	border-bottom: 1px dashed #bec2c7;
+	padding: 20px 8px;
+}
+.photo{
+	margin-right: 16px;
+	flex: 1 1 auto;
+}
+.text{
+	flex: 0 0 336px;
+}
+
+@media (max-width: 767px){
+
+	/*ナビゲーションのリストを縦に並べる*/
+	.nav{
+		background-color: #dfddda;
+	}
+	.nav li{
+		display: block;
+	}
+
+	/*2コラムレイアウトを解除*/
+	.item{
+		display: block;
+	}
+	.photo{
+		margin-right: 0;
+		width: 100%;
+	}
+	.text{
+		width: 100%;
+	}
